@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { LazyDialogService } from './services/lazy-dialog.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'angular-lazy-dialog';
+  constructor(public lazyDialog: LazyDialogService) {}
 }
