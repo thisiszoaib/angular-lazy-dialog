@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { LazyDialogService } from './services/lazy-dialog.service';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,5 @@ import { LazyDialogService } from './services/lazy-dialog.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  constructor(public lazyDialog: LazyDialogService) {}
+  constructor() {}
 }
